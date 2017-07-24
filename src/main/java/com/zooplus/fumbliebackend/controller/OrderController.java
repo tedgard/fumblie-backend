@@ -16,10 +16,14 @@ public class OrderController {
     private OrderService orderService;
 
 
-    @RequestMapping(value = "/order", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(method = RequestMethod.POST, produces = "application/json")
     public ResponseEntity<?> placeOrder(@RequestBody final OrderDto orderDto) {
         return new ResponseEntity<>(orderService.placeOrder(orderDto), HttpStatus.OK);
+    }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/{orderId}", produces = "application/json")
+    public ResponseEntity<?> getOrder(@PathVariable Long orderId) {
+        return new ResponseEntity<>(orderService.findById(orderId), HttpStatus.OK);
     }
 
 }
