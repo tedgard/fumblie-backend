@@ -1,4 +1,4 @@
-package com.zooplus.fumbliebackend.model;
+package com.zooplus.fumbliebackend.model.entity;
 
 import lombok.Data;
 

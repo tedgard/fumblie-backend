@@ -1,6 +1,6 @@
 package com.zooplus.fumbliebackend.repo;
 
-import com.zooplus.fumbliebackend.model.Product;
+import com.zooplus.fumbliebackend.model.entity.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

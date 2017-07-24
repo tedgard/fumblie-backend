@@ -1,6 +1,6 @@
 package com.zooplus.fumbliebackend.repo;
 
-import com.zooplus.fumbliebackend.model.Product;
+import com.zooplus.fumbliebackend.model.entity.Product;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
