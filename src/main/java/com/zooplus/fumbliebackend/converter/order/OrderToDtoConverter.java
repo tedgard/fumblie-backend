@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 @Component
-public class OrderToOrderDtoConverter implements Converter<Order, OrderDto> {
+public class OrderToDtoConverter implements Converter<Order, OrderDto> {
 
     @Resource
     OrderItemListToDtoConverter orderItemListToDtoConverter;
