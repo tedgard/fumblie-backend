@@ -6,7 +6,7 @@ import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
 @Component
-public class productToProductDtoConverter implements Converter<Product, ProductDto> {
+public class ProductToProductDtoConverter implements Converter<Product, ProductDto> {
 
     @Override
     public ProductDto convert(Product product) {
