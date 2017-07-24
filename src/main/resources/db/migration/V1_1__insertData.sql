@@ -1,0 +1,1 @@
+INSERT INTO PRODUCT (title, description, price, image) VALUES ('Meat grinder','Grinds whatever and whoever you like!',10.99,'https://images-na.ssl-images-amazon.com/images/I/81Newxu%2BV0L._SL1500_.jpg');
