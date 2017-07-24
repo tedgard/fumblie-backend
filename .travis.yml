@@ -5,5 +5,6 @@ notifications:
   email: false
 deploy:
   provider: heroku
+  on: master
   api_key:
     secure: "6dbf52d0-96e7-4ae2-a964-c1a31cdaffa8"
