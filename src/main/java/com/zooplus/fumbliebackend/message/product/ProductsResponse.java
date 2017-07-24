@@ -5,11 +5,8 @@ import lombok.Data;
 
 import java.util.List;
 
-/**
- *
- */
 @Data
-public class ProductResponse {
+public class ProductsResponse {
 
     List<ProductDto> products;
 }
