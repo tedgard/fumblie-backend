@@ -9,14 +9,24 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class Product {
-
+public class Address {
     @Id
     @GeneratedValue
-    @Column(name = "product_id")
+    @Column(name = "address_id")
     private Long id;
-    private String title;
-    private String description;
-    private String image;
-    private Double price;
+
+    @Column
+    private String name;
+
+    @Column
+    private String street;
+
+    @Column
+    private String city;
+
+    @Column(name = "zip_code")
+    private String zipCode;
+
+    @Column
+    private String country;
 }
