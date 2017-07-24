@@ -3,10 +3,10 @@ package com.zooplus.fumbliebackend.repo;
 import com.zooplus.fumbliebackend.model.entity.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 import static org.junit.Assert.assertTrue;
@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 @SpringBootTest
 public class ProductRepoTest {
 
-    @Autowired
+    @Resource
     private ProductRepo productRepo;
 
     @Test

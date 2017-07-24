@@ -5,10 +5,11 @@ import com.zooplus.fumbliebackend.model.dto.ProductDto;
 import com.zooplus.fumbliebackend.model.entity.Product;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import javax.annotation.Resource;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -23,7 +24,7 @@ public class ProductToProductDtoConverterTest {
     public static final double PRODUCT_PRICE = 10.99;
     public static final long PRODUCT_ID = 1L;
 
-    @Autowired
+    @Resource
     private Converter<Product, ProductDto>  underTest;
 
     @Test
