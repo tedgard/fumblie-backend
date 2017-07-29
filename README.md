@@ -10,3 +10,5 @@ Link to the deployed application (on Heroku) :
 Link to swagger : 
 ``https://fumblie-backend.herokuapp.com/swagger-ui.html``
 
+---
+
